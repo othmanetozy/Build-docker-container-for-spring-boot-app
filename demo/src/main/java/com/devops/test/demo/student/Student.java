@@ -3,6 +3,8 @@ package com.devops.test.demo.student;
 
 import jakarta.persistence.*;
 
+import java.time.Period;
+
 @Entity
 @Table
 public class Student {
@@ -21,6 +23,7 @@ public class Student {
     private String FirstName;
     private String LastName;
     private String email;
+    @Transient
     private int age;
 
     public Student() {
@@ -70,19 +73,18 @@ public class Student {
         this.email = email;
     }
 
-    public int getAge() {
-        return age;
-    }
+    /*public int getAge() {
+        return Period.between();
+    }*/
 
-    public void setAge(int age) {
+  /*  public void setAge(int age) {
         this.age = age;
-    }
+    }*/
 
-    public Student(Long id, String firstName, String lastName, String email, int age) {
+    public Student(Long id, String firstName, String lastName, String email) {
         this.id = id;
         FirstName = firstName;
         LastName = lastName;
         this.email = email;
-        this.age = age;
     }
 }

@@ -12,15 +12,15 @@ public class StudentConfig {
     public CommandLineRunner commandLineRunner(StudentRepository repository) {
         return args -> {
             Student student = new Student(
-                    1L, "othmane", "toto", "otozy@gmail.com", 24
+                    1L, "othmane", "toto", "otozy@gmail.com"
             );
 
             Student std = new Student(
-                    445L, "titi", "toto", "toti@gmail.com", 12
+                    445L, "titi", "toto", "toti@gmail.com"
             );
 
             Student std1 = new Student(
-                    1L, "othmane", "toto", "otozy@gmail.com", 24
+                    1L, "othmane", "toto", "otozy@gmail.com"
             );
 
             repository.saveAll(
