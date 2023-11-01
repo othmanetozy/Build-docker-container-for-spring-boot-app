@@ -59,6 +59,9 @@
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
+					<image>
+						<builder>paketobuildpacks/builder:tiny</builder>
+					</image>
 				</configuration>
 			</plugin>
 		</plugins>
